@@ -3,6 +3,8 @@ import {
 	BaseEntity,
 	Column,
 	Entity,
+	JoinTable,
+	ManyToMany,
 	OneToMany,
 	PrimaryGeneratedColumn,
 } from "typeorm";
@@ -33,8 +35,22 @@ export class User extends BaseEntity {
 		(post) => post.author,
 	)
 	posts!: Post[];
+
+	@Field(() => [User])
+	@ManyToMany(
+		() => User,
+		(user) => user.followedBy,
+	)
+	@JoinTable()
+	follows!: User[];
+
+	@Field(() => [User])
+	@ManyToMany(
+		() => User,
+		(user) => user.follows,
+	)
+	followedBy!: User[];
 }
 
 //  TODO
-// - follows: [User]
 // - subs: [User]

@@ -48,6 +48,3 @@ export class Post extends BaseEntity {
 		this.createdAt = new Date();
 	}
 }
-
-//  TODO
-// - author: User
