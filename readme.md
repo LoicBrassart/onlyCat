@@ -62,6 +62,18 @@
 ## Doing
 
 ## Done
+
+## Frontend
+- package.json
+- tsconfig.json
+- eslint.config.js
+- index.html
+- vite.config.ts
+- src/main.tsx
+- src/Layout.tsx
+- src/pages/Homepage.tsx
+
+## Backend
 - package.json
 - tsconfig.json
 - index.ts
