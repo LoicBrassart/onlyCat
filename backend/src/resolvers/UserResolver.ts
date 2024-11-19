@@ -6,7 +6,7 @@ export class UserResolver {
 	@Query(() => [User])
 	async getUsers() {
 		const users = await User.find({
-			relations: ["posts", "follows"],
+			relations: ["posts", "follows", "followedBy"],
 		});
 		return users;
 	}

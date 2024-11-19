@@ -72,6 +72,10 @@
 - src/main.tsx
 - src/Layout.tsx
 - src/pages/Homepage.tsx
+- Install/configure codegen
+- Implementer premier composant "bête"
+- Wrapper mon app dans un ApolloProvider et lui fournir un client valide
+- Ajouter un appel à une Query
 
 ## Backend
 - package.json
